@@ -1,0 +1,60 @@
+Commands  :
+ node js instation reuired: 
+  sudo npm install -g @angular/cli
+
+   ng new first-angular-app (setup first project )
+   npm instaall (for all required depedencies) 
+   npm start (it uses ng server internally)
+
+  package.json  and package.code.json depedency managedment of applications : 
+
+
+ #11 : 
+ application starts with index.html : template 
+ app.component.ts : 
+ #12 &13&14 :
+     Components structure and it's properties and value or list of values :
+#15
+  Angular won't automatically scan components , dev had to explicity tell to anugular  about componetns/ files etc..
+   like add in imports  propoerty of class's component:
+#16 : 
+       styleUrl for singel file of css and styleUrls:[] for more then 1 css file : 
+     in line css also allowed but [refered to have sepeerate file : 
+
+#17 :
+      create componet with foder and some auto confuraytion as well with command over temrinal : 
+      ng g c {Component Name}
+      ng g c User 
+
+
+#18 : 
+      again angular won't scan automatically , so add componet in import peoproty of app : 
+
+#19 : 
+     Dynamic content displaying :
+#20 : 
+        all propoerties that are defined in compnent class are avaible in that template of same compnent with public access modiefier: if private can't be acced in template :
+         array values are 0 index based : 
+  #21 : 
+          Outing puting dynamic conten tin anguler app in 2 ways : 
+           1 ) String -inteproaltion  using {{valueHere}} 
+
+  #22 : 
+       2) Propoery -Biindg :
+         <img 
+           [src] = " 'users/image/' + selectedUser.avater" />
+#23 
+<img [src] = "someSrc" >  bind the src propoerty of the undetling HTMLIMage elemmtns DOM obect to the values stored in someSrc:
+
+
+#24 : 
+     wrring function in class and using them for data bining as property vallue : 
+
+
+         get impagePath () {
+          return "imageplace"
+         }
+   <img [src] = "imagePath" />
+
+
+    
