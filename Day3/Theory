@@ -1,0 +1,44 @@
+#25: Listening to user input:
+
+#26: Data stored in properties state:
+
+#27: Angular does detect the event and perform data exchange automatically with the help of the Angular package Zone.js.
+
+#28: Two ways for updating state:
+
+Relying on Zone.js & Angular change detection.
+
+Using signals to notify Angular about value changes and required UI updates (Angular 16):
+
+Import signals and wrap them with the signal method, then set the values:
+
+Signals are best due to their fine-grained mechanism.
+
+#29: Values would be accessed by the function name and then properties if using signals.
+
+#30: Seatable properties on components from outside of components:
+
+With @Input decorators.
+
+#31: We can make the required configuration true to have mandatory properties kind of validation. By default, all properties are required = false.
+
+#32: Using signals for input acceptance:
+id = input<T>(); // Generic method can be used for different types
+name = input.required<T>(); 
+Here, inputs are only for reading the value, not updating values using set() methods.
+
+#33: Custom components take input and should also produce output.
+
+#34: Output decorators:
+select = new EventEmitter();
+emit();
+
+#35: Output functions don't need to create an object using new EventEmitter(); Internally, output() uses the same method:
+select = output<T>(); // This is not signal state detection; output() works on @Output() decorator.
+
+#36: Registering with the output decorator or output function:
+
+Generic event possible with EventEmitter<T>().
+
+#37: Accepting input from one component and producing the result to another component.
+
