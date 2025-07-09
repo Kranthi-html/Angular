@@ -1,0 +1,22 @@
+#38:
+Static type of inputs and dealing with them and ternary operator for fallback
+
+#39:
+Dealing with object types
+
+#40:
+Inline to outline code moving:
+#1: Type
+#2: Interface
+
+#41:
+Dynamic layout: @for and @if @else and track user.id
+
+#42:
+Conditional output using if and else
+
+#43:
+Alternative and angle < 17, then use *ngFor, ngIf, and else {}
+
+#44:
+Working with nested components
