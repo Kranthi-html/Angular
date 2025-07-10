@@ -1,0 +1,25 @@
+#45 : Conditional-based showing components
+#46 : Communication between components and binding the data
+#47 : Creating separate model for commonly used data
+#48 : Conditional CSS based on selected user
+#49 : Deleting tasks:
+Again flow: listen for event in HTML, then emit the event to another HTML component. From there, do deletion.
+#50 : Creating conditional component in another component:
+Nested components with condition.
+#51 : Removed the pop-up from cancel or out-of-pop clicked, and again emit events.
+#52 : Take user input using [(ngModel)] by including [FormsModule] in imports.
+By default, even though type is date, it’s still considered as string.
+#53 : Two-way binding: using signal()
+Directly accessible, no need to call method() like this:
+#54 : Handling forms: <button type="submit"> ---> sends data to server or backend via POST operation.
+#55 : Submit the taken data by emitting the events:
+And submitting the data type is very important:
+@Output() add = new EventEmitter<TypeObject>();
+add.emit({TypeObject});
+#56 : Doing global CSS with the help of <ng-content>
+#57 : Transform the data using pipe mechanism:
+| date 'full' or 'short'
+#58 : Create separate services for common tasks or global tasks.
+#59 : Dependency injection using constructor.
+#60 : Dependency injection using inject(typeofObject).
+#61 : Working with browser cache or local storage for data storage: getItem(), setItem()
