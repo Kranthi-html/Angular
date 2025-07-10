@@ -10,13 +10,13 @@
            <!--<li *ngFor ="let user of users"> -->
          <li>
           <app-user 
-        [user] = "user" (select) = "onSelectUser($event)"/>
+        [user] = "user" [selected]="user.id == selectedUserId" (select) = "onSelectUser($event)"/>
       </li>
      }
        </ul>
      <!--   this is from ang 17-->
          @if(selectedUser){
-    <app-task [name]="selectedUser.name"/>
+    <app-task [userId] ="selectedUser.id" [name]="selectedUser.name"/>
         }
         @else{
           <p id = "fallabck"> Select a user to see thier tasks!</p>
