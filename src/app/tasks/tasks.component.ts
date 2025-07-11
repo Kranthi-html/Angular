@@ -6,8 +6,8 @@ import { type NewTaskData } from './task/task.model';
 import { TasksService } from './task/tasks.service';
 @Component({
   selector: 'app-tasks',
-  standalone: true,
-  imports: [TaskComponent,NewTaskComponent],
+  standalone: false,
+ // imports: [TaskComponent,NewTaskComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
@@ -43,9 +43,9 @@ export class TasksComponent {
    onCloseAddTask() {
     this.isAddingTask = false;
    }
-   onAddTask(taskData : NewTaskData) {
+  //  onAddTask(taskData : NewTaskData) {
       
-      // if want to add at begiing then use unshift() instaed of push()
-      this.isAddingTask = false;
-    }
+  //     // if want to add at begiing then use unshift() instaed of push()
+  //     this.isAddingTask = false;
+  //   }
 }
