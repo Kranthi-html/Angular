@@ -1,0 +1,27 @@
+Section-3: Working with Modules
+
+#64: Intro about Modules:
+
+#65: Good and Not Good about Modules:
+
+#66: Angular < 19 vs Angular >= 19:
+
+#67: Registering all components in the declarations array for modularization:
+
+#68: Important: If a component is standalone, add it to the imports array; if it is a module, add it to the declarations array:
+
+#69: Working with a mix of both standalone components and modules:
+
+#70: Summary:
+
+#71: Migrating all components to modules by making the required changes, like setting standalone to false and adding components in the declarations array:
+
+#72: Creating and sharing components via export:
+
+#73: Working with nested module components:
+
+Section-4:
+
+#74: Investment app intro:
+
+#75 & #76: Adding the header with a public folder image:
