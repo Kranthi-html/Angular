@@ -1,0 +1,16 @@
+#77: Adding user component and collect data from user and output on console
+#78: ngSubmit using form submission handling
+#79: Extracting the value with two-way binding using ngModel directive
+#80: Calculating the data and applying POJO for more than two parameters if present
+#81: Cross-component communication with outputs
+With @Output and EventEmitter with @Input decorators, emit the event and let another component listen to it
+
+#82: Always use a data model if you have more parameters and repeat using the same code in many places with more parameters.
+#83: Passing data from child to parent components
+Input always expects some initialization or handle it using ? or !.
+Sending data / triggering event []
+Receiving data / listening to event ()
+
+#84: Output the data in a table using if and for for both scenarios.
+#85: Format the values of currency using a pipe 
+
