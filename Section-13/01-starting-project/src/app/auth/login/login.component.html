@@ -1,4 +1,34 @@
-<form #form ="ngForm" (ngSubmit)="onSubmit(form)">
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h2>Login</h2>
+
+  <div class="control-row">
+    <div class="control no-margin">
+      <label for="email">Email</label>
+      <input 
+      id="email" 
+      type="email"  
+      [formControl] = "form.controls.email"/>
+    </div>
+    <div class="control no-margin">
+      <label for="password">Password</label>
+      <input 
+      id="password" 
+      type="password" 
+      formControlName="password"
+      />
+    </div>
+
+    <button class="button">Login</button>
+  </div>
+  @if(emailIsInvalid){
+    <p class="control-error"> Pls enter vlaid email</p>
+   }
+</form>
+
+
+
+
+<!-- <form #form ="ngForm" (ngSubmit)="onSubmit(form)">
   <h2>Login</h2>
 
   <div class="control-row">
@@ -39,10 +69,10 @@
   <p class="control-error"> Invalid values detected . please check your</p>
 } -->
 
-@if(email.touched && email.dirty && email.invalid) {
+<!-- @if(email.touched && email.dirty && email.invalid) {
 <p class="control-error"> Invalid values detected . please check your</p>
 }
 @if(password.touched && password.dirty && password.invalid) {
 <p class="control-error">  Invlaid password entered- must be atleast 6  characters long.</p>
 }
-</form>
+</form> --> 
