@@ -1,0 +1,46 @@
+from #243 to #251
+
+Template-driven Forms Validation:
+
+Worked with ngModel directive for form binding.
+
+Validated input fields and handled user interaction properties such as touched, dirty, etc.
+
+Mapping Form Values:
+
+Used FormModules to map form values with a reference.
+
+Dynamic Styling and Behavior:
+
+Applied ngClass for behavior and styling, e.g., input.ng-touched {}.
+
+RxJS Integration:
+
+Subscribed to observables, transforming data using pipes.
+
+Ensured proper resource management by unsubscribing to avoid memory leaks once tasks were completed.
+Pre-populating Form Values:
+
+Set up a mechanism to pre-populate form values when the form is loaded on the page.
+Reactive Forms:
+FormGroup and Nested FormGroup:
+
+Used FormGroup and nested FormGroup() for creating structured forms.
+
+Synchronization Between Reactive Form and Template:
+
+Synced the form structure using the Reactive Forms module directives:
+
+[formGroup] at the form level.
+
+formControlName at the field level.
+
+Handling Form Submission:
+
+Used ngSubmit for handling form submission without direct input for the onSubmit() method.
+
+Form Validation with Validators:
+
+Applied the Validators class to validate form fields (e.g., required, email format, minLength, etc.).
+
+
