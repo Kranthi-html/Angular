@@ -1,0 +1,27 @@
+#252 to #266 : 
+Building Custom Validators:
+Created and used async validators for handling asynchronous communication.
+
+The important part is: return null if valid, or else return an error object (e.g., { L: true }).
+Registering Forms with Reactive Forms:
+Used FormGroup, FormControl directive, and Validators function for setting up form validation in Angular.
+
+For each field, validation is handled individually, and submission is managed.
+
+On form submission, the form object is reset if necessary.
+Handling Single Inputs and Multiple Inputs:
+For single-type inputs and multiple inputs, nested FormGroups were used for structure.
+
+For a list of inputs or dropdowns, nested FormGroups allow handling multiple options efficiently.
+
+Used arrays and indexing for managing multiple form controls.
+
+Implemented validation logic for both single and multiple inputs.
+
+
+
+Working with Routing:
+Set up routing by creating separate app configurations and app routes.
+
+Used the <router-outlet/> tag to display routed components dynamically based on the active route.
+
