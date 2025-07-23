@@ -1,0 +1,8 @@
+From #273 to #297:
+Worked with dynamic route parameters, extracting them via observables.
+Worked with nested routes and accessed route data from inside nested routes.
+Loaded data based on route parameters in child routes.
+Split route definitions across multiple files.
+Set query parameters and extracted query parameters via inputs and observables, then performed data manipulations.
+Accessed route data in components, then set up the title of the page both statically and dynamically.
+Used Route Guards to activate and deactivate routes by controlling the route flow.
