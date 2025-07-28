@@ -1,0 +1,48 @@
+#401 : Getting access to ng-content with @ContentChild:
+Using @ContentChild decorator to access the content projected.
+Section - 22
+#405 : Assignment:
+Using setInterval().
+
+#406 & #407 : Passing Recipe Data with Property and Event Binding:
+Top to bottom-level component communication and data binding.
+#409 : Allowing user to add ingredients to the shopping list:
+Bottom to top component communication with the help of localRef, ViewChild, and inter-component communication under the same parent component.
+Section - 23
+#410 : Introduction to types of Directives such as Attribute and Structural:
+#411 & #412 : Recap of ngIf, ngFor, ngClass, and ngStyle:
+#413 & #414 :
+Changing the colors of an attribute directive using Renderer2 and a custom directive via DOM access.
+
+
+#416 : Using HostListener to Listen to Host Events:
+@HostListener for events such as mouseOver and mouseLeave.
+
+#417 : Using Host Binding to bind to host properties:
+@HostBinding('style.backgroundColor') bgcolor: string;
+this.bgcolor = 'blue';
+
+
+#418 & #419 : Building Directive Properties:
+
+#420 : Building a Structural Directive for ngIf:
+
+@Input() set appUnless(condition: boolean) {
+  if (condition) {
+    this.viewRef.create();
+  } else {
+    this.viewRef.clear();
+  }
+}
+
+
+#421 : Understanding ngSwitch:
+
+
+[ngSwitch]="value"
+*ngSwitchCase="caseValue"
+*ngSwitchDefault
+
+
+Section - 24
+#422 : Building and Using DropDown Directives:
