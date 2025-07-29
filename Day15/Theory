@@ -1,0 +1,16 @@
+Section 25
+Hierarchical Dependency Injector: Angular's dependency injector allows services to be provided at various levels (e.g., AppModule or component level), affecting their availability to other components.
+
+Service Sharing: If a service is provided at the AppModule level, the same instance is available to all components. If provided at the AppComponent, only that component and its children share that instance.
+
+Injection Flexibility: Services can be injected into other services, enhancing service management.
+
+Instance Uniqueness: A service provided at the lowest level (e.g., a single component) will have its own instance, which can override instances from higher levels.
+Section26
+Service Instance Sharing: It reiterates that services can be provided at different levels (e.g., AppModule or specific components) and emphasizes the implications of where a service is provided for its accessibility.
+
+State Management: If provided at a higher level (like the AppModule), the same service instance is shared across the entire application, aiding in consistent state management.
+
+Component-Level Provisioning: If a service is provided at the AppComponent level, it restricts access to that component and its children, not allowing access to instances provided at lower levels.
+
+Injecting Services into Other Services: The lecture highlights the flexibility of injecting services into other services, which enhances management capabilities within your Angular application.
